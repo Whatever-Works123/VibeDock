@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Modular Dashboard</title>
+    <title>App Dashboard</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -11,20 +11,30 @@
     <div class="app-container">
         
         <aside class="sidebar">
-            <div class="logo">MyApp</div>
+            <div class="logo">My Project</div>
             <nav>
                 <ul>
-                    <li><button onclick="loadSection('dashboard')">Dashboard</button></li>
-                    <li><button onclick="loadSection('profile')">Profile</button></li>
-                    <li><button onclick="loadSection('settings')">Settings</button></li>
+                    <li>
+                        <button class="sidebar-btn active" onclick="loadSection('dashboard', this)">
+                            Dashboard
+                        </button>
+                    </li>
+                    <li>
+                        <button class="sidebar-btn" onclick="loadSection('profile', this)">
+                            Profile
+                        </button>
+                    </li>
+                    <li>
+                        <button class="sidebar-btn" onclick="loadSection('settings', this)">
+                            Settings
+                        </button>
+                    </li>
                 </ul>
             </nav>
         </aside>
 
         <main id="main-content">
-            <h1>Welcome</h1>
-            <p>Select an item from the sidebar to load content.</p>
-        </main>
+            </main>
 
     </div>
 
