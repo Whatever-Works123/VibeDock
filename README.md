@@ -1,0 +1,2 @@
+# VibeDock
+Chat with friends
