@@ -1,11 +1,39 @@
-<h1>User Profile</h1>
-<div class="profile-card">
-    <img src="images/avatar.png" alt="User Avatar" class="avatar">
-    <h2>John Doe</h2>
-    <p>Web Developer</p>
-    <button onclick="saveProfile()">Save Changes</button>
+<div class="profile-header">
+    <h1>My Profile</h1>
+    <p class="subtitle">Manage your account settings and preferences.</p>
 </div>
 
-<button class="sidebar-btn" onclick="loadSection('profile', this)">
-    Profile
-</button>
+<div class="profile-container">
+    
+    <div class="profile-card">
+        <div class="avatar-placeholder">JD</div>
+        <h2>John Doe</h2>
+        <p class="role">Administrator</p>
+        <button class="btn-primary">Upload New Photo</button>
+    </div>
+
+    <div class="profile-form">
+        <form onsubmit="saveProfile(event)">
+            <div class="form-group">
+                <label>Full Name</label>
+                <input type="text" value="John Doe" placeholder="Enter your name">
+            </div>
+
+            <div class="form-group">
+                <label>Email Address</label>
+                <input type="email" value="john@example.com" placeholder="name@company.com">
+            </div>
+
+            <div class="form-group">
+                <label>Bio</label>
+                <textarea rows="4" placeholder="Tell us about yourself..."></textarea>
+            </div>
+
+            <div class="form-actions">
+                <button type="button" class="btn-secondary">Cancel</button>
+                <button type="submit" class="btn-primary">Save Changes</button>
+            </div>
+        </form>
+    </div>
+
+</div>
